@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful & Interactive Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<style>
+    /* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles for body and header */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Styling for main sections */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.hero {
+    background-color: #3498db;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.features {
+    padding: 2rem;
+    background-color: #f39c12;
+    color: white;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 1rem;
+}
+
+.feature {
+    background-color:grey;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-out;
+}
+
+/* Styling for footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #34495e;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+}
+.redirect-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.redirect-link:hover {
+    background-color: #2980b9;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Welcome to Colourful World</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Explore the Colors!</h2>
+                <p>Click the buttons to change the background color.</p>
+                <button id="red-btn">Red</button>
+                <button id="blue-btn">Blue</button>
+                <button id="green-btn">Green</button>
+            </div>
+        </section>
+        <section class="features">
+            <h2>Features Section</h2>
+            <div class="feature">
+                <h3>Interactive Elements</h3>
+                <p>Hover over me!</p>
+                <a href="https://docs.google.com/document/d/1aVMWb23eC-dsD5S74-rOrnKDzH2rw0YXMP6E6cplZYk/edit" class="redirect-link">Click Here</a>
+            </div>
+            <div class="feature">
+                <h3>Animated Effects</h3>
+                <p>Scroll down to see animations!</p>
+                <a href="https://www.google.com/search?q=animated+pic&sca_esv=25bc5e5f5e5d6c4e&udm=2&biw=1366&bih=641&ei=z-mEZtSMJMSH4-EPl8-FYA&ved=0ahUKEwiUsK_FmYqHAxXEwzgGHZdnAQwQ4dUDCBA&uact=5&oq=animated+pic&gs_lp=Egxnd3Mtd2l6LXNlcnAiDGFuaW1hdGVkIHBpYzIIEAAYgAQYsQMyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI_CRQ5wFYkyFwAngAkAEAmAHoAaABswmqAQU0LjUuMbgBA8gBAPgBAZgCDKACigrCAg0QABiABBixAxhDGIoFwgIKEAAYgAQYQxiKBcICDhAAGIAEGLEDGIMBGIoFmAMAiAYBkgcFNC43LjGgB-U2&sclient=gws-wiz-serp" class="redirect-link">Click Here</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Colourful World</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
